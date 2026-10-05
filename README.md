@@ -3,7 +3,7 @@
 An online research seminar organised jointly by King's College London and
 Université Paris-Dauphine – PSL.
 
-Website: https://vladimir-avetian.github.io/peai-seminar/
+Website: https://peai-seminar.org/
 
 This is a standalone static website. No framework, package installation, build
 step, API key, or paid server is needed. It is separate from the personal website
@@ -45,7 +45,7 @@ in `fonts/OFL.txt`. Institution logos keep the original institutions' image URLs
 They remain dependent on those external servers and retain their owners' rights.
 
 All local assets use relative paths, so the site works both under
-`/peai-seminar/` and at the root of a future custom domain.
+`/peai-seminar/` and at the root of the custom domain.
 
 To preview, open `index.html` in a browser, or run a local static server from this
 directory, for example `python3 -m http.server 8000`.
@@ -53,6 +53,15 @@ directory, for example `python3 -m http.server 8000`.
 GitHub Pages settings: **Deploy from a branch → main → /(root)**.
 The `.nojekyll` file prevents Jekyll processing.
 
-For a future custom domain, set it in this repository's Pages settings and follow
-GitHub's DNS instructions. Update the canonical, Open Graph, and Twitter URLs in
-`index.html`. Do not change the personal website repository's domain settings.
+The custom domain is `peai-seminar.org`, configured in this repository's Pages
+settings and in `CNAME`. Porkbun manages its DNS:
+
+- Root ALIAS → `vladimir-avetian.github.io` (Porkbun flattens this to IP addresses).
+- `www` CNAME → `vladimir-avetian.github.io` (GitHub redirects to the root domain).
+- Keep the `_github-pages-challenge-vladimir-avetian` TXT record: it verifies
+  ownership with GitHub and helps prevent domain takeovers.
+
+Do not add wildcard records or point DNS at a URL containing `/peai-seminar/`.
+Keep GitHub Pages' **Enforce HTTPS** enabled once its certificate is issued.
+For any future domain change, also update the canonical, Open Graph, and Twitter
+URLs in `index.html`. Do not change the personal website repository's domain settings.
