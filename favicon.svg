@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" fill="#171815"/>
-  <path d="M15 15h34v34H15z" fill="none" stroke="#f2f0e9" stroke-width="2"/>
-  <text x="32" y="38" text-anchor="middle" fill="#f2f0e9" font-family="Arial, sans-serif" font-size="16" font-weight="700">PE</text>
-  <circle cx="49" cy="15" r="5" fill="#b9432f"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>A single green pea</title>
+  <defs>
+    <radialGradient id="pea" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#a8ce68"/>
+      <stop offset=".6" stop-color="#79a846"/>
+      <stop offset="1" stop-color="#527c34"/>
+    </radialGradient>
+  </defs>
+  <path d="M16 3c7.5 0 13 5.8 13 13.2C29 23.7 23.5 29 16 29S3 23.4 3 16.2C3 9 8.5 3 16 3Z" fill="url(#pea)" stroke="#496f30" stroke-width="1"/>
+  <path d="M9 11a8 8 0 0 1 5-3" fill="none" stroke="#d6e8a9" stroke-width="2" stroke-linecap="round" opacity=".65"/>
 </svg>
