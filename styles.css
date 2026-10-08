@@ -273,9 +273,9 @@ summary {
   object-fit: contain;
 }
 
-.partner-dauphine img {
-  max-width: min(100%, 158px);
-  max-height: 32px;
+.partner-govreg img {
+  max-width: min(100%, 180px);
+  max-height: 44px;
 }
 
 .partner-kbs img {
