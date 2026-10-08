@@ -362,6 +362,17 @@ summary {
   margin-top: 0.75rem;
 }
 
+.programme .coauthors a {
+  color: var(--muted);
+  text-decoration-color: currentColor;
+}
+
+.programme .coauthors a:hover,
+.programme .coauthors a:focus-visible {
+  color: var(--text);
+  text-decoration-color: currentColor;
+}
+
 .programme details summary {
   font-size: 1rem;
 }
